@@ -1,0 +1,49 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] A = new int[999];
+            ZogimA(A);
+
+            int[] B = new int[999];
+            ZogimB(B);
+            
+
+            Console.ReadLine();
+
+
+
+        }
+
+        public static void ZogimA(int[] x) 
+        {
+            int count=0;
+            x = new int[999];
+            
+            for (int i = 0; i < x.Length; i++)
+            {
+                Random rnd = new Random();
+                x[i] = rnd.Next(1,1000);
+                count++;
+                if (count >= 10 && count % 2 == 0)
+                { 
+                  Console.WriteLine(x[i]);
+                  
+                }
+            }
+        }
+
+        public static void ZogimB(int[] x) 
+        {
+            int count = 0;
+            x = new int[999];
+            Random rnd = new Random();
+            for (int i = 0; i < x.Length; i++)
+            {
+                x[i] = rnd.Next(1, 1000);
+                count++;
+                if (count%2==0)
+                {
+                    Console.WriteLine(x[i]);
+                }
+            }
